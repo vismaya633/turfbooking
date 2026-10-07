@@ -1,0 +1,50 @@
+### api call for listing all turf bookings
+GET http://127.0.0.1:8000/turf/
+Accept: application/json
+
+### api call for adding turf booking
+POST http://127.0.0.1:8000/turf/
+Content-Type: application/json
+
+{
+    "customer_name": "xavier",
+    "turf_name": "squareteam",
+    "sport": "badminton",
+    "booking_date": "2026-03-22",
+    "booking_time": "7:00",
+    "duration": 2,
+    "amount": 1500
+}
+
+### api call for retrieving one booking
+
+GET http://127.0.0.1:8000/turf/1/
+Accept: application/json
+
+### api call for updating turf booking
+PUT http://127.0.0.1:8000/turf/1/
+Content-Type: application/json
+
+{
+    "customer_name": "Vismaya",
+    "turf_name": "Green Arena",
+    "sport": "badminton",
+    "booking_date": "2026-3-22",
+    "booking_time": "8:00",
+    "duration": 3,
+    "amount": 2000
+}
+
+### api call for deleting turf booking
+DELETE http://127.0.0.1:8000/turf/2/
+Accept: application/json
+
+
+### serializer
+GET http://127.0.0.1:8000/v2/turf/
+Accept: application/json
+
+
+###
+GET http://127.0.0.1:8000/turf/
+Accept: application/json
